@@ -1,0 +1,22 @@
+databases:
+  - name: stubroadgram_DB
+    databaseName: stubroadgram_db
+    user: suu
+    region: singapore
+
+services:
+  - type: web
+    name: suu
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: c74cf1748eeb7df6705a2338e3490af3
+        fromDatabase:
+          name: stubroadgram_DB
+          property: connectionString
+      - key: c74cf1748eeb7df6705a2338e3490af3
+        sync: false
+
