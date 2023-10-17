@@ -39,6 +39,25 @@
     <%= f.text_field :lng,:value =>"経度", id: :lng %>
   <%= f.submit "Tweetする" %>
 <% end %>
+
+<div class="mappppp">
+    <div class="kennsakumap">
+      <div class="field">
+        <input 
+        class="text" 
+        type="textbox"
+        placeholder="マップ検索"
+        onkeyup="this.setAttribute('value', this.value);"
+        id="address"
+        value=""/>
+        <label class="label">マップ検索</label>
+        <label class="error"></label>
+        
+      </div>
+    </div>
+
+
+
 <h2>Map</h2>
 
 <input id="address" type="textbox" value="GeekSalon">
@@ -107,4 +126,4 @@ function codeAddress(){
 }
 
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY9P2_Hnm6C5zcKj8Qia5V-nZC6SG9RSE&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDayWOD0E9pX6QwAhq8ewxVcLd-m0cJRMg&callback=initMap" async defer></script>

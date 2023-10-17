@@ -7,7 +7,6 @@
     <%= csp_meta_tag %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    
   </head>
 
   <body>
@@ -19,33 +18,17 @@
   <nav id="g-nav">
     <div id="g-nav-list">  
       <ul>
-        <li>
-        <%= link_to "トップ", new_post_path %>
-        </li>  
-        <li>
-        <%= link_to "アメリカ", posts_america_path %>
-        </li>  
-        <li>
-        <%= link_to "カナダ", posts_canada_path %>
-        </li>  
-        <li>
-        <%= link_to "イギリス", posts_uk_path %>
-        </li>
-        <li>
-        <%= link_to "オーストラリア", posts_aus_path %>
-        </li>  
-        <li>
+        <li><%= link_to "トップ", posts_path %></li>  
+        <li><%= link_to "アメリカ", posts_america_path %></li>  
+        <li><%= link_to "カナダ", posts_canada_path %></li>  
+        <li><%= link_to "イギリス", posts_uk_path %></li>
+        <li><%= link_to "オーストラリア", posts_aus_path %></li>  
         <% if user_signed_in? %>
-              <li>
-              <%= link_to "マイページ", user_path(current_user.id) %>
-              <li>
-              <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-              </li>  
-              <% else %>
-            <li><%= link_to "Signin", new_user_registration_path %></li>
-            <li><%= link_to "Login", new_user_session_path %></li>
-            <% end %>
-        </li>  
+          <li><%= link_to "マイページ", user_path(current_user.id) %></li>
+        <% else %>
+          <li><%= link_to "Signin", new_user_registration_path %></li>
+          <li><%= link_to "Login", new_user_session_path %></li>
+        <% end %>  
       </ul>  
     </div>
   </nav>
