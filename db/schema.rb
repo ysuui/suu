@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_10_02_100756) do
+ActiveRecord::Schema.define(version: 2023_10_19_101130) do
 
   create_table "comments", force: :cascade do |t|
     t.string "content"
@@ -35,6 +35,10 @@ ActiveRecord::Schema.define(version: 2023_10_02_100756) do
     t.string "category"
     t.float "lat"
     t.float "lng"
+    t.string "america"
+    t.string "uk"
+    t.string "canada"
+    t.string "aus"
   end
 
   create_table "users", force: :cascade do |t|
