@@ -33,7 +33,7 @@
     /*ナビのスタート位置と形状*/
     top:0;
     right: -100%;
-    width:30%;
+    width:20%;
     height: 100vh;/*ナビの高さ*/
     background:#fff;
     /*動き*/
@@ -47,7 +47,7 @@
 #g-nav.panelactive #g-nav-list{
     position: fixed;
     z-index: 999;
-    width: 30%;
+    width: 20%;
     height: 100vh;
     overflow: auto;
     -webkit-overflow-scrolling: touch;

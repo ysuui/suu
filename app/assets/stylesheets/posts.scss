@@ -47,11 +47,11 @@ h1 {
     background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-    width: 200px;
+    width: 100px;
     height: 30px;
     text-align:center;
     padding:15px 0;
-    font-size: 20px;
+    font-size: 30px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
     position: absolute;
   }
@@ -96,14 +96,15 @@ button.btn {
  
 .posts-container{
   background-color: #ffffff;
-  width: 80vw;
-  margin: 2em auto;
+  width: 5%;
+  margin: 0 auto;
 padding: 1em;
-width: 100%;
+width: 70%;
 border: 3px dashed #000000;
 color: #000000;
 background-color: #fff;
 border-radius: 1px;
+
 }
 .posts-container p {
     margin: 0; 
